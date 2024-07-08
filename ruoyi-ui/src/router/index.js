@@ -61,6 +61,31 @@ export const constantRoutes = [
     component: () => import('@/views/error/401'),
     hidden: true
   },
+  //新增一些合泰项目的导航
+  {
+    //首页
+    path: '/home',
+    component: () => import('@/views/hetai/home'),
+    hidden: true
+  },
+  {
+    //新闻资讯
+    path: '/news',
+    component: () => import('@/views/hetai/news'),
+    hidden: true
+  },
+  {
+    //招标采标
+    path: '/callBids',
+    component: () => import('@/views/hetai/callBids'),
+    hidden: true
+  },
+  {
+    //新闻详情
+    path: '/detail',
+    component: () => import('@/views/hetai/detail'),
+    hidden: true
+  },
   {
     path: '',
     component: Layout,
